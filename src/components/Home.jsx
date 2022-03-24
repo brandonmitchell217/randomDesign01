@@ -6,6 +6,8 @@ import microsoft from '../assets/images/microsoft.png'
 import google from '../assets/images/google.png'
 import spotify from '../assets/images/spotify.png'
 import HomeServices from './pageComps/HomeServices'
+import HomeAbout from './pageComps/HomeAbout'
+import HomeContact from './pageComps/HomeContact'
 
 const Home = () => {
   return (
@@ -40,6 +42,8 @@ const Home = () => {
         </div>
       </section>
       <HomeServices />
+      <HomeAbout />
+      <HomeContact />
     </>
   )
 }

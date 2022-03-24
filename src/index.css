@@ -18,7 +18,7 @@ a {
 section {
   position: relative;
   min-height: 100vh;
-  padding: 0 1em;
+  padding: 1em;
 }
 
 /************************
@@ -104,7 +104,7 @@ nav {
 .topLeft {
   width: 100%;
   text-align: center;
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
 }
 .topLeft h1 {
   font-size: 44px;
@@ -113,7 +113,7 @@ nav {
 }
 .topLeft p {
   margin: 0 auto;
-  padding: 10px 0 8px;
+  padding: 5px 0;
   max-width: 43ch;
   font-size: 15px;
 }
@@ -132,30 +132,33 @@ nav {
   font-weight: 500;
   font-size: 18px;
   padding: 0.75em 0;
-  width: 65%;
+  max-width: 320px;
+  width: 60%;
   text-align: center;
 }
 .cta:last-of-type {
   border-color: #dedede;
   background: transparent;
 }
-.bottomLeft {
-  position: relative;
+
+.bottomRight {
+  margin: 0 0 3em;
 }
 
-.comp1 {
+.comp1,
+.comp2 {
   display: block;
   max-width: 800px;
   width: 100%;
 }
-.phone1 {
+.phone1,
+.phone2 {
+  display: block;
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   right: 50px;
-  transform: translateY(-20%);
-  /* min-width: 120px;
-  width: 20vw; */
-  max-width: 140px;
+  transform: translateY(-15%);
+  max-width: 160px;
   width: 24vw;
 }
 
@@ -169,9 +172,15 @@ nav {
 .companies img {
   height: 30px;
 }
+
+/************************
+*************************
+      Home Services
+************************
+*************************/
+
 .homeServices {
-  padding: 0;
-  padding-top: 3em;
+  padding: 3em 0 0;
   background: #dedede;
   color: #000;
   text-align: center;
@@ -190,7 +199,8 @@ nav {
 }
 .homeServices .ctas .cta {
   background: #000;
-  width: 65%;
+  max-width: 320px;
+  width: 60%;
 }
 .homeServices .ctas .cta:last-of-type {
   background: transparent;
@@ -228,6 +238,141 @@ nav {
   padding: 0.5em 0;
   width: 65%;
 }
+
+/************************
+*************************
+      Home About
+************************
+*************************/
+
+.homeAbout {
+  padding: 1.5em 0;
+}
+
+.homeAbout h2 {
+  font-size: 32px;
+  text-align: center;
+}
+.feature {
+  width: 100%;
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature .bottomLeft {
+  padding: 1em 1.5em;
+}
+.feature .bottomLeft h3 {
+  font-size: 28px;
+  text-align: center;
+}
+.feature .bottomLeft p {
+  padding: 0.5em 0;
+  margin: 0 auto;
+  width: clamp(45ch, 50%, 75ch);
+  font-size: 15px;
+}
+.feature .bottomLeft .featureLnk {
+  padding: 0 0.5em;
+  color: #dedede;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.feature .bottomLeft .featureLnk .arrow {
+  margin-left: 5px;
+}
+
+.featureImg {
+  max-width: 550px;
+  width: 100%;
+}
+
+.aboutBottom {
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutBottom p {
+  text-align: center;
+  padding: 1em 0;
+  width: clamp(30ch, 50%, 60ch);
+}
+
+.aboutCta {
+  max-width: 320px;
+  width: 60%;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0.75em 0;
+  color: #000;
+  background: #dedede;
+  margin-bottom: 3em;
+}
+
+.phone2 {
+  bottom: 0;
+}
+/************************
+*************************
+      Home Contact
+************************
+*************************/
+.homeContact {
+  min-height: 45vh;
+  background: #20bac5;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactForm {
+  max-width: 360px;
+  width: 100%;
+}
+.contactForm h3 {
+  text-align: center;
+}
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactForm form input {
+  width: 100%;
+  margin: 4px 0;
+  padding: 4px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+#message {
+  position: relative;
+  min-height: 38px;
+}
+#message span {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+#contactSubmit {
+  width: 50%;
+}
+
 @media (min-width: 749px) {
   .home .cover {
     flex-direction: row;
