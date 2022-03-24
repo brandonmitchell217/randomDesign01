@@ -16,11 +16,9 @@ a {
   text-decoration: none;
 }
 section {
+  position: relative;
   min-height: 100vh;
   padding: 0 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /************************
@@ -88,6 +86,7 @@ nav {
 *************************/
 
 .home {
+  padding-top: 4em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -167,7 +166,68 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   gap: 1em 0;
 }
-
+.companies img {
+  height: 30px;
+}
+.homeServices {
+  padding: 0;
+  padding-top: 3em;
+  background: #dedede;
+  color: #000;
+  text-align: center;
+}
+.homeServices header {
+  padding: 0 1em;
+  margin-bottom: 4vh;
+}
+.homeServices header h2 {
+  font-size: 32px;
+}
+.homeServices header p {
+  margin: 0 auto;
+  padding: 1em 0;
+  max-width: 43ch;
+}
+.homeServices .ctas .cta {
+  background: #000;
+  width: 65%;
+}
+.homeServices .ctas .cta:last-of-type {
+  background: transparent;
+  color: #000;
+  border-color: #000;
+}
+.homeServices .service {
+  width: 100%;
+  padding: 0.5em 0.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #000;
+}
+.homeServices .service h3 {
+  font-size: 30px;
+}
+.homeServices .service span {
+  font-size: 22px;
+}
+.homeServices .service p {
+  max-width: 43ch;
+  margin: 4px 0 8px;
+  font-size: 15px;
+}
+.serviceLink {
+  display: block;
+  border: 2px solid #000;
+  border-radius: 30px;
+  background: transparent;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.5em 0;
+  width: 65%;
+}
 @media (min-width: 749px) {
   .home .cover {
     flex-direction: row;
@@ -181,9 +241,6 @@ nav {
   }
 }
 
-.companies img {
-  height: 30px;
-}
 .services {
   background-color: pink;
 }
