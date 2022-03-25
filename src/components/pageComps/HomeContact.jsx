@@ -1,10 +1,8 @@
 import {
-  FaEnvelope,
   FaFacebook,
   FaHome,
   FaInstagram,
   FaLinkedin,
-  FaLinkedinIn,
   FaPhoneAlt,
 } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
@@ -27,23 +25,20 @@ const HomeContact = () => {
         </form>
       </div>
       <div className="contactInfo">
+        <h3>Contact Info</h3>
         <div>
-          <Link to="/" className="address">
-            <FaHome />
-            1111 Random Way <br />
-            Random, Pl 00000
+          <Link to="/" className="lnk address">
+            <FaHome className="faI" />
+            <span>
+              1111 Random Way <br />
+              Random, Pl 00000
+            </span>
           </Link>
         </div>
         <div>
-          <Link to="/" className="number">
-            <FaPhoneAlt />
-            111 - 111 - 1234
-          </Link>
-        </div>
-        <div>
-          <Link to="/" className="email">
-            <FaEnvelope />
-            random@email.com
+          <Link to="/" className="lnk number">
+            <FaPhoneAlt className="faI" />
+            <span>111 - 111 - 1234</span>
           </Link>
         </div>
       </div>
