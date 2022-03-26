@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
-import '../../index.css'
 import SocialTech from '../../assets/images/socialTech.jpg'
 import HomeTech from '../../assets/images/homeTech.jpg'
 import Comp2 from '../../assets/images/laptop2.png'
