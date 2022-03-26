@@ -19,38 +19,40 @@ const HomeServices = () => {
           </Link>
         </div>
       </header>
-      <div className="service">
-        <h3>Basic</h3>
-        <span>$19.99/Mo</span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-          libero quae omnis.
-        </p>
-        <Link to="/" className="serviceLink">
-          Lorem Ipsum
-        </Link>
-      </div>
-      <div className="service">
-        <h3>Plus</h3>
-        <span>$39.99/Mo</span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-          libero quae omnis.
-        </p>
-        <Link to="/" className="serviceLink">
-          Lorem Ipsum
-        </Link>
-      </div>
-      <div className="service">
-        <h3>Premium</h3>
-        <span>$49.99/Mo</span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-          libero quae omnis.
-        </p>
-        <Link to="/" className="serviceLink">
-          Lorem Ipsum
-        </Link>
+      <div className="serviceBox">
+        <div className="service">
+          <h3>Basic</h3>
+          <span>$19.99/Mo</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+            libero quae omnis.
+          </p>
+          <Link to="/" className="serviceLink">
+            Lorem Ipsum
+          </Link>
+        </div>
+        <div className="service">
+          <h3>Plus</h3>
+          <span>$39.99/Mo</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+            libero quae omnis.
+          </p>
+          <Link to="/" className="serviceLink">
+            Lorem Ipsum
+          </Link>
+        </div>
+        <div className="service">
+          <h3>Premium</h3>
+          <span>$49.99/Mo</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+            libero quae omnis.
+          </p>
+          <Link to="/" className="serviceLink">
+            Lorem Ipsum
+          </Link>
+        </div>
       </div>
     </section>
   )

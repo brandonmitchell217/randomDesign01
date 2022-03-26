@@ -25,7 +25,6 @@ const HomeContact = () => {
         </form>
       </div>
       <div className="contactInfo">
-        <h3>Contact Info</h3>
         <div>
           <Link to="/" className="lnk address">
             <FaHome className="faI" />

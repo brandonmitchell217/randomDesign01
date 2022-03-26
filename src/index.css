@@ -239,6 +239,7 @@ nav {
   font-size: 16px;
   padding: 0.5em 0;
   width: 65%;
+  min-width: 175px;
 }
 
 /************************
@@ -440,6 +441,59 @@ nav {
   .phone1 {
     bottom: 32%;
     transform: translateY(-32%);
+  }
+  .companies {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .homeServices .service h3 {
+    font-size: 34px;
+  }
+  .homeServices .service span {
+    margin: 8px 0;
+    font-size: 28px;
+  }
+  .homeServices .service p {
+    margin: 4px 0 16px;
+    font-size: 16px;
+  }
+  .serviceLink {
+    font-size: 18px;
+  }
+}
+@media (max-width: 699px) {
+  .serviceLink {
+    font-size: 14px;
+  }
+}
+@media (min-width: 699px) {
+  .homeServices header {
+    margin-bottom: 4.5em;
+  }
+  .homeServices .serviceBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeServices .service {
+    max-width: 360px;
+    margin: 0 4vw;
+    border: 2px solid #000;
+    border-radius: 12px;
+  }
+  .homeServices .service:first-of-type,
+  .homeServices .service:last-of-type {
+    margin-bottom: 15vh;
+  }
+  .homeServices .service:nth-of-type(2) {
+    margin-top: 30px;
+  }
+
+  .homeServices .ctas {
+    flex-direction: row;
+  }
+  .homeServices .ctas .cta {
+    width: 200px;
+    margin: 0 5px;
   }
 }
 
