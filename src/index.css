@@ -6,7 +6,7 @@
 }
 body {
   position: relative;
-  padding-bottom: 4em;
+  padding-bottom: 8em;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,7 +19,7 @@ a {
 section {
   position: relative;
   min-height: 100vh;
-  padding: 1em;
+  padding: 3em 0;
 }
 
 /************************
@@ -302,7 +302,10 @@ nav {
 }
 
 .aboutBottom {
-  padding: 3em 1em 4em;
+  max-width: 850px;
+  position: relative;
+  margin: 0 auto;
+  padding: 5em 1em 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -329,6 +332,9 @@ nav {
 }
 
 .phone2 {
+  max-width: 200px;
+  right: 12%;
+  transform: translateX(-12%);
   bottom: 20px;
 }
 /************************
@@ -496,6 +502,7 @@ footer {
   .feature .bottomLeft,
   .feature .topRight {
     margin: 2em 0;
+    padding: 0 1em;
     max-width: 600px;
     width: 50%;
   }
