@@ -6,6 +6,7 @@
 }
 body {
   position: relative;
+  padding-bottom: 4em;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -257,6 +258,7 @@ nav {
   text-align: center;
 }
 .feature {
+  max-width: 699px;
   width: 100%;
   margin: 3em 0;
   display: flex;
@@ -431,9 +433,82 @@ nav {
 .homeContact .logo {
   color: #000;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footLeft .logo {
+  display: block;
+  margin-bottom: 8px;
+}
+.footLeft .social {
+  width: 100%;
+  border: 3px solid #1d4e89;
+  border-radius: 8px;
+  padding: 5px 0 1px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 22px;
+}
+.footLeft .social a {
+  color: #dedede;
+}
+.footRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footRight a {
+  color: #dedede;
+  background: #1d4e89;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 0.5em 1em;
+  margin-bottom: 8px;
+}
+
+.footRight span {
+  font-size: 13px;
+}
+
 @media (min-width: 749px) {
-  .home .cover {
+  .home .cover,
+  .feature {
     flex-direction: row;
+  }
+  .feature {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+  .feature .bottomLeft,
+  .feature .topRight {
+    margin: 2em 0;
+    max-width: 600px;
+    width: 50%;
+  }
+  .feature .bottomLeft .featureLnk {
+    max-width: 600px;
+    width: 50%;
+    justify-content: center;
+  }
+  .featureImg {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    max-height: 320px;
   }
   .topLeft {
     width: 50%;

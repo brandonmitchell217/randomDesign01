@@ -8,6 +8,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Services from './components/Services'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

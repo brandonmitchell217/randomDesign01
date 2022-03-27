@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer>
-      <div className="topLeft">
+      <div className="footLeft">
         <Link to="/" className="logo">
           Lorem Ipsum
         </Link>
@@ -21,7 +21,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="topRight">
+      <div className="footRight">
         <Link to="/contact">Let's Connect</Link>
         <span>2022 Copyright</span>
       </div>

@@ -43,7 +43,7 @@ const Home = () => {
       </section>
       <HomeServices />
       <HomeAbout />
-      <HomeContact />
+      {/* <HomeContact /> */}
     </>
   )
 }
