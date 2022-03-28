@@ -16,7 +16,7 @@ const Home = () => {
       <section className="home">
         <div className="cover">
           <div className="topLeft">
-            <h1>Lorem Ipsum Dolor</h1>
+            <h1>Lorem Ipsum</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
               ex ratione neque? Ullam, quaerat!
