@@ -88,7 +88,7 @@ nav {
 *************************/
 
 .home {
-  padding-top: 4em;
+  padding-top: 6em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -144,9 +144,14 @@ nav {
 }
 
 .bottomRight {
+  position: relative;
   margin: 0 0 3em;
 }
-
+.landingIll {
+  max-width: 800px;
+  width: 100%;
+}
+/* ????? */
 .comp1,
 .comp2 {
   display: block;
@@ -157,13 +162,13 @@ nav {
 .phone2 {
   display: block;
   position: absolute;
-  bottom: 15%;
+  bottom: 0;
   right: 50px;
-  transform: translateY(-15%);
+  /* transform: translateY(-15%); */
   max-width: 160px;
   width: 24vw;
 }
-
+/* ????? */
 .companies {
   width: 100%;
   margin: 2em 0;
@@ -173,7 +178,8 @@ nav {
   gap: 1em 0;
 }
 .companies img {
-  height: 30px;
+  max-width: 180px;
+  width: 50%;
 }
 
 /************************
@@ -183,7 +189,7 @@ nav {
 *************************/
 
 .homeServices {
-  padding: 3em 0 0;
+  padding: 6.5em 0;
   background: #dedede;
   color: #000;
   text-align: center;
@@ -219,6 +225,9 @@ nav {
   align-items: center;
   border-top: 2px solid #000;
 }
+.homeServices .service:last-of-type {
+  border-bottom: 2px solid #000;
+}
 .homeServices .service h3 {
   font-size: 30px;
 }
@@ -250,7 +259,7 @@ nav {
 *************************/
 
 .homeAbout {
-  padding: 3em 0;
+  padding: 6em 0;
 }
 
 .homeAbout h2 {
@@ -305,7 +314,7 @@ nav {
   max-width: 850px;
   position: relative;
   margin: 0 auto;
-  padding: 5em 1em 4em;
+  padding: 3em 1em 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -487,12 +496,20 @@ footer {
 .footRight span {
   font-size: 13px;
 }
-
+/* @media (max-width: 749px) {
+  .companies img {
+    height: 45px;
+  }
+} */
 @media (min-width: 749px) {
+  .home .cover {
+    padding: 0 1em;
+  }
   .home .cover,
   .feature {
     flex-direction: row;
   }
+
   .feature {
     max-width: 1800px;
     width: 100%;
@@ -519,10 +536,6 @@ footer {
   }
   .topLeft {
     width: 50%;
-  }
-  .phone1 {
-    bottom: 32%;
-    transform: translateY(-32%);
   }
   .companies {
     grid-template-columns: repeat(4, 1fr);

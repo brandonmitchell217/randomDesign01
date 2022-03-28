@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <div className="footRight">
         <Link to="/contact">Let's Connect</Link>
-        <span>2022 Copyright</span>
+        <span>Copyright &copy; 2022 </span>
       </div>
     </footer>
   )

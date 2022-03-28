@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import landingComp from '../assets/images/laptop1.png'
-import landingPhone from '../assets/images/phone1.png'
+// import landingComp from '../assets/images/laptop1.png'
+// import landingPhone from '../assets/images/phone1.png'
+import illustr1 from '../assets/images/testIllustrationReact.png'
 import netflix from '../assets/images/netflix.png'
 import microsoft from '../assets/images/microsoft.png'
 import google from '../assets/images/google.png'
@@ -30,8 +31,7 @@ const Home = () => {
             </div>
           </div>
           <div className="bottomRight">
-            <img src={landingComp} alt="Computer" className="comp1" />
-            <img src={landingPhone} alt="Phone" className="phone1" />
+            <img src={illustr1} alt="Computer" className="landingIll" />
           </div>
         </div>
         <div className="companies">
