@@ -346,6 +346,7 @@ footer {
   left: 0;
   right: 0;
   padding: 1.5em 1em;
+  border-top: 2px solid rgba(222, 222, 222, 0.75);
   display: flex;
   justify-content: space-between;
   align-items: center;
