@@ -23,15 +23,15 @@ const Navigation = () => {
       <FaBars className="burger" open={open} onClick={burgerMenu} />
       <div className="navList" open={open}>
         <FaTimes className="close" open={open} onClick={burgerMenu} />
-        <Link to="/services" className="menuItem">
+        <Link to="/" className="menuItem">
           Services
         </Link>
 
-        <Link to="/about" className="menuItem">
+        <Link to="/" className="menuItem">
           About
         </Link>
 
-        <Link to="/contact" className="menuItem">
+        <Link to="/" className="menuItem">
           Contact
         </Link>
 
