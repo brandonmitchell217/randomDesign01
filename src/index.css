@@ -182,8 +182,34 @@ nav {
   text-align: center;
 }
 .homeServices header {
+  position: relative;
   padding: 0 1em;
   margin-bottom: 4vh;
+}
+/* .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100;
+} */
+.border img {
+  position: absolute;
+  top: 14px;
+  left: 20%;
+  transform: translateX(-20%);
+  max-width: 400px;
+  width: 30%;
+  display: none;
+}
+.border2 img {
+  position: absolute;
+  top: 14px;
+  right: 12.5%;
+  transform: translateX(-12.5%) rotateY(180deg);
+  max-width: 400px;
+  width: 30%;
+  display: none;
 }
 .homeServices header h2 {
   font-size: 32px;
@@ -383,7 +409,22 @@ footer {
 .footRight span {
   font-size: 13px;
 }
-
+@media (min-width: 1400px) {
+  .topLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .topLeft p {
+    width: 50%;
+    text-align: center;
+  }
+  .border img,
+  .border2 img {
+    display: block;
+  }
+}
 @media (min-width: 1000px) {
   .home .cover {
     padding: 0 1em;
@@ -402,6 +443,7 @@ footer {
     max-width: 100%;
     padding: 5px 0 40px;
   }
+
   .ctas .cta {
     margin: 0 20px;
   }

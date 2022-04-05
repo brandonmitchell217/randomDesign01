@@ -1,10 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Border1 from '../../assets/images/border.png'
 
 const HomeServices = () => {
   return (
     <section className="homeServices">
       <header>
+        <div className="border">
+          <img src={Border1} alt="border" />
+        </div>
+        <div className="border2">
+          <img src={Border1} alt="border" />
+        </div>
         <h2>Lorem Ipsum Dolor Sit</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
